@@ -8,6 +8,17 @@ class Map extends React.Component {
       center: [`${this.props.lng}`, `${this.props.lat}`],
       zoom: `${this.props.zoom}`
     });
+
+    this.props.parks.map((park) => {
+      let popupHTML = '<h3>' + park.title + '</h3>' + 
+        '<p>' + park.addr + '</p>' +
+        (park.notes ? '<p>' + park.notes + '</p>' : '');
+      let marker = new mapboxgl.Marker()
+      .setLngLat(park.coord)
+      .setPopup(new mapboxgl.Popup({ offset: 40 })
+      .setHTML(popupHTML))
+      .addTo(this.map);
+    })
   }
 
   componentWillUnmount() {
