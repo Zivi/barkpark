@@ -1,0 +1,13 @@
+{"parks": [
+  {
+    "title": "Red Hill",
+    "addr": "100 Shaw Drive <br> San Anselmo, CA 94960",
+    "coord": [-122.56308774, 37.9817749]
+  },
+  {
+    "title": "Muir Beach",
+    "addr": "100 Pacific Way <br> Muir Beach, CA 94965",
+    "notes": "Lagoon is excluded",
+    "coord": [-122.5779213, 37.8602072]
+  }
+]}
