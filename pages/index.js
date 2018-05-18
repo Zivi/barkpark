@@ -9,11 +9,15 @@ export default class extends React.Component {
   constructor(props) {
     super(props);
     this.state = {
-      citySelected: "sf"
+      citySelected: "sf",
+      coord: props.coord,
+      parks: props.parks
     }
   }
   
   static async getInitialProps() {
+    // pass in context.params from next.js to get city information
+    // add error state with 404 page
     const response = await fetch('http://localhost:3000/static/sf-parks.json');
     const jsonResults = await response.json();
     return jsonResults;
@@ -25,10 +29,10 @@ export default class extends React.Component {
     })
     const response = await fetch(`http://localhost:3000/static/${event.target.value}-parks.json`);
     const jsonResults = await response.json();
-
-    // remove old markers array, set state for parks
-    // pass in new lat, long values, to read into the render function for map
-
+    this.setState({
+      coord: jsonResults.coord,
+      parks: jsonResults.parks
+    })
   }
 
   render() {
@@ -45,7 +49,7 @@ export default class extends React.Component {
           <span id="index-subtitle">&nbsp; Find a great off leash 🐶 park</span>
         </h1>
         <Dropdown onChange={this.handleChange.bind(this)} value={this.state.citySelected}/>
-        <Map lng='-122.42' lat='37.7749' zoom='11' parks={this.state.parks || this.props.parks}/>
+        <Map coord={this.state.coord} zoom='11' parks={this.state.parks}/>
         <Footer />
         <style global jsx>{`
           body {

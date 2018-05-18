@@ -8,17 +8,22 @@ class Map extends React.Component {
 
   static getDerivedStateFromProps(nextProps, prevState) {
     if (typeof mapboxgl === 'undefined' || !prevState.map) return null;
+    prevState.markers.forEach(oldMarker => {
+      oldMarker.remove();
+    })
     return {
-      markers: createMarkers(nextProps.parks, prevState.map)
+      markers: createMarkers(nextProps.parks, prevState.map),
+      center: centerMap(nextProps.coord, prevState.map)
     }
   }
 
   componentDidMount() {
     mapboxgl.accessToken = 'pk.eyJ1IjoiendlaW5zdG9jayIsImEiOiJjamd6eXB3NjIwazg1MndyNDQyeGN1dHRmIn0.XMPt0R1BrJZtqJcklFGwPg';
+
     this.map = new mapboxgl.Map({
       container: this.mapContainer,
       style: 'mapbox://styles/mapbox/streets-v9',
-      center: [this.props.lng, this.props.lat],
+      center: this.props.coord,
       zoom: this.props.zoom
     });
 
@@ -60,6 +65,10 @@ const createMarkers = (parks, map) => {
     markers.push(marker);
   })
   return markers;
+}
+
+const centerMap = (coords, map) => {
+  map.flyTo({center: coords});
 }
 
 export default Map;

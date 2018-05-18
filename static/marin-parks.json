@@ -1,4 +1,5 @@
-{"parks": [
+{ "coord": [-122.5438364, 37.9291806],
+  "parks": [
   {
     "title": "Red Hill",
     "addr": "100 Shaw Drive <br> San Anselmo, CA 94960",

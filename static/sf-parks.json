@@ -1,4 +1,5 @@
-{"parks": [
+{ "coord": [-122.42, 37.7749],
+  "parks": [
     {
       "title": "Fort Funston",
       "addr": "Fort Funston Rd San <br> Francisco, CA 94132",
