@@ -1,38 +1,53 @@
-import Head from 'next/head'
-import React from 'react'
-import 'isomorphic-unfetch'
-import Dropdown from '../components/dropdown'
-import Map from '../components/map'
-import Footer from '../components/footer'
+import Head from "next/head";
+import React from "react";
+import "isomorphic-unfetch";
+import Dropdown from "../components/dropdown";
+import Map from "../components/map";
+import Footer from "../components/footer";
 export default class extends React.Component {
-
   constructor(props) {
     super(props);
     this.state = {
-      citySelected: "sf",
+      citySelected: props.citySelected,
       coord: props.coord,
       parks: props.parks
-    }
+    };
   }
-  
-  static async getInitialProps() {
+
+  static async getInitialProps({ query }) {
     // pass in context.params from next.js to get city information
     // add error state with 404 page
-    const response = await fetch('http://localhost:3000/static/sf-parks.json');
-    const jsonResults = await response.json();
-    return jsonResults;
+    const location = query.location || "sf";
+    try {
+      const response = await fetch(
+        `http://localhost:3000/static/${location}-parks.json`
+      );
+      const jsonResults = await response.json();
+      jsonResults.citySelected = query.location;
+      return jsonResults;
+    } catch (e) {
+      const response = await fetch(
+        `http://localhost:3000/static/sf-parks.json`
+      );
+      const jsonResults = await response.json();
+      jsonResults.citySelected = query.location;
+      jsonResults.jsonNotFound = true;
+      return jsonResults;
+    }
   }
 
   async handleChange(event) {
     this.setState({
       citySelected: event.target.value
-    })
-    const response = await fetch(`http://localhost:3000/static/${event.target.value}-parks.json`);
+    });
+    const response = await fetch(
+      `http://localhost:3000/static/${event.target.value}-parks.json`
+    );
     const jsonResults = await response.json();
     this.setState({
       coord: jsonResults.coord,
       parks: jsonResults.parks
-    })
+    });
   }
 
   render() {
@@ -40,16 +55,32 @@ export default class extends React.Component {
       <div>
         <Head>
           <title>Bark 🐾 Park</title>
-          <meta name="viewport" content="initial-scale=1.0, width=device-width" />
-          <script crossOrigin src='https://api.mapbox.com/mapbox-gl-js/v0.44.2/mapbox-gl.js'></script>
-          <link href='https://api.mapbox.com/mapbox-gl-js/v0.44.2/mapbox-gl.css' rel='stylesheet' />
+          <meta
+            name="viewport"
+            content="initial-scale=1.0, width=device-width"
+          />
+          <script
+            crossOrigin
+            src="https://api.mapbox.com/mapbox-gl-js/v0.44.2/mapbox-gl.js"
+          />
+          <link
+            href="https://api.mapbox.com/mapbox-gl-js/v0.44.2/mapbox-gl.css"
+            rel="stylesheet"
+          />
         </Head>
         <h1>
           Bark 🐾 Park
           <span id="index-subtitle">&nbsp; Find a great off leash 🐶 park</span>
         </h1>
-        <Dropdown onChange={this.handleChange.bind(this)} value={this.state.citySelected}/>
-        <Map coord={this.state.coord} zoom='11' parks={this.state.parks}/>
+        <span className="error-message">
+          {this.props.jsonNotFound &&
+            "We couldn't find parks with your location, select a location from the dropdown ➡ "}
+        </span>
+        <Dropdown
+          onChange={this.handleChange.bind(this)}
+          value={this.state.citySelected}
+        />
+        <Map coord={this.state.coord} zoom="11" parks={this.state.parks} />
         <Footer />
         <style global jsx>{`
           body {
@@ -57,7 +88,7 @@ export default class extends React.Component {
             max-width: 800px;
             width: 95%;
             margin: 0 auto;
-          }          
+          }
           #index-subtitle {
             font-size: 12px;
             font-weight: 300;
@@ -69,6 +100,6 @@ export default class extends React.Component {
           }
         `}</style>
       </div>
-    )
+    );
   }
 }
