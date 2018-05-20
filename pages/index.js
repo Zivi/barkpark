@@ -10,7 +10,8 @@ export default class extends React.Component {
     this.state = {
       citySelected: props.citySelected,
       coord: props.coord,
-      parks: props.parks
+      parks: props.parks,
+      zoom: props.zoom
     };
   }
 
@@ -46,7 +47,8 @@ export default class extends React.Component {
     const jsonResults = await response.json();
     this.setState({
       coord: jsonResults.coord,
-      parks: jsonResults.parks
+      parks: jsonResults.parks,
+      zoom: jsonResults.zoom
     });
   }
 
@@ -89,7 +91,11 @@ export default class extends React.Component {
           onChange={this.handleChange.bind(this)}
           value={this.state.citySelected}
         />
-        <Map coord={this.state.coord} zoom="10" parks={this.state.parks} />
+        <Map
+          coord={this.state.coord}
+          zoom={this.state.zoom}
+          parks={this.state.parks}
+        />
         <Footer />
         <style global jsx>{`
           body {

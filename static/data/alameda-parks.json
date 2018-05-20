@@ -1,0 +1,62 @@
+{
+  "coord": [-122.0359962, 37.7591692],
+  "zoom": 9,
+  "parks": [
+    {
+      "title": "Cesar Chavez Park",
+      "addr": "11 Spinnaker Way <br> Berkeley, CA 94710",
+      "coord": [-122.3216733, 37.8696579]
+    },
+    {
+      "title": "Ohlone Doggy Park",
+      "addr": "800 Hearst Ave <br> Berkeley, CA 94703",
+      "coord": [-122.2772258, 37.8732866]
+    },
+    {
+      "title": "Earl Warren",
+      "addr": "4660 Crow Canyon Rd <br> Castro Valley, CA 94552",
+      "coord": [-122.0586274, 37.6995175]
+    },
+    {
+      "title": "Dougherty Hills",
+      "addr": "Stagecoach Road and Amador Valley Blvd <br> Dublin, CA 94568",
+      "coord": [-121.9166618, 37.7178053]
+    },
+    {
+      "title": "Central Park",
+      "addr": "1110 Stevenson Blvd <br> Fremont, CA 94538",
+      "coord": [-121.964395, 37.5567531]
+    },
+    {
+      "title": "Del Valle Dog Run",
+      "addr": "Del Valle Road <br> Livermore, CA 94550",
+      "notes": "Dog Park is to the right of the marina",
+      "coord": [-121.7061337, 37.5861104]
+    },
+    {
+      "title": "Livermore Canine Parks",
+      "addr": "Murdell Lane <br> Livermore, CA 94538",
+      "coord": [-121.964395, 37.5567531]
+    },
+    {
+      "title": "Max Baer Park",
+      "addr": "Murdell Lane <br> Livermore, CA 94550",
+      "coord": [-121.833032, 37.6645872]
+    },
+    {
+      "title": "Hardy Dog Park",
+      "addr": "5500 Claremont Ave <br> Oakland, CA 94618",
+      "coord": [-122.2583551, 37.8418639]
+    },
+    {
+      "title": "Muirwood Dog Exercise Area",
+      "addr": "4701 Muirwood Drive <br> Pleasanton, CA 94588",
+      "coord": [-121.919636, 37.68415]
+    },
+    {
+      "title": "Drigon Dog Park",
+      "addr": "Mission Blvd at 7th Street <br> Union City, CA 94587",
+      "coord": [-122.0073502, 37.5907246]
+    }
+  ]
+}

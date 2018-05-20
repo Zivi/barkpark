@@ -17,6 +17,15 @@ class Dropdown extends React.Component {
           <option className="geo-option" value="marin">
             Marin
           </option>
+          <option className="geo-option" value="alameda">
+            Alameda
+          </option>
+          <option className="geo-option" value="sanmateo">
+            San Mateo
+          </option>
+          <option className="geo-option" value="santaclara">
+            Santa Clara
+          </option>
         </select>
         <style jsx>{`
           .geo-dropdown {

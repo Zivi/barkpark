@@ -1,0 +1,91 @@
+{
+  "coord": [-121.9272117, 37.2998956],
+  "zoom": 9,
+  "parks": [
+    {
+      "title": "Mountain View Dog Park",
+      "addr": "Shoreline Boulevard and North Road <br> Mountain View, CA 94043",
+      "coord": [-122.07738, 37.428396]
+    },
+    {
+      "title": "Greer Park",
+      "addr": "1098 Amarillo Ave <br> Palo Alto, CA 94303",
+      "coord": [-122.119499, 37.4416683]
+    },
+    {
+      "title": "Mitchell Park",
+      "addr": "3800 Middlefield Rd <br> Palo Alto, CA 94303",
+      "coord": [-122.1143883, 37.4223159]
+    },
+    {
+      "title": "Hoover Park",
+      "addr": "2901 Cowper St <br> Palo Alto, CA 94306",
+      "coord": [-122.1288599, 37.430202]
+    },
+    {
+      "title": "Los Gatos Creek County Dog Park",
+      "addr": "1250 Dell Avenue <br> Campbell, CA 94306",
+      "coord": [-121.949697, 37.270554]
+    },
+    {
+      "title": "Los Gatos Creek County Dog Park",
+      "addr": "1250 Dell Avenue <br> Campbell, CA 94306",
+      "coord": [-121.949697, 37.270554]
+    },
+    {
+      "title": "Ed R Levin County Park",
+      "addr": "3100 Calaveras Rd <br> Milpitas, CA 95035",
+      "coord": [-121.8663419, 37.4549814]
+    },
+    {
+      "title": "Discovery Dog Park",
+      "addr": "Park and Delmas Ave <br> San Jose, CA 95110",
+      "coord": [-121.8959267, 37.328444]
+    },
+    {
+      "title": "Jeffrey Fontana Park Dog Park",
+      "addr": "Meridian Ave <br> San Jose, CA 95120",
+      "coord": [-121.8821474, 37.233332]
+    },
+    {
+      "title": "Hellyer County Park",
+      "addr": "Hellyer Ave <br> San Jose, CA 95111",
+      "coord": [-121.8109667, 37.28741266]
+    },
+    {
+      "title": "Miyuki Dog Park",
+      "addr": "Autoech Way and Miuki Dr <br> San Jose, CA 95119",
+      "coord": [-121.793737, 37.239669]
+    },
+    {
+      "title": "Butcher Dog Park",
+      "addr": "1782 Lancaster Dr <br> San Jose, CA 95124",
+      "coord": [-121.9181583, 37.2599755]
+    },
+    {
+      "title": "Ryland Dog Park",
+      "addr": "Ryland St <br> San Jose, CA 95110",
+      "coord": [-121.8982193, 37.34190718]
+    },
+    {
+      "title": "Saratoga Creek Dog Park",
+      "addr": "5399 Graves Ave <br> San Jose, CA 95129",
+      "coord": [-121.996939, 37.2958067]
+    },
+    {
+      "title": "Watson Park",
+      "addr": "N 22nd St and Jackson St <br> San Jose, CA 95112",
+      "coord": [-121.8781545, 37.3590874]
+    },
+    {
+      "title": "Reed St Dog Park",
+      "addr": "888 Reed St <br> Santa Clara, CA 95050",
+      "coord": [-121.947118, 37.358722]
+    },
+    {
+      "title": "Las Palmas Park",
+      "addr": "800 Spinosa Dr <br> Sunnyvale, CA 94087",
+      "coord": [-122.037767, 37.3646864]
+    }
+  ]
+}

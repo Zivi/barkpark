@@ -1,0 +1,51 @@
+{
+  "coord": [-122.348722, 37.498288],
+  "zoom": 10,
+  "parks": [
+    {
+      "title": "Seal Point",
+      "addr": "1901 J Hart Clinton Dr,<br> San Mateo, CA 94401",
+      "coord": [-122.3014943, 37.5731739]
+    },
+    {
+      "title": "Cipriani",
+      "addr": "525 Buena Vista Ave,<br> Belmont, CA 94002",
+      "coord": [-122.3064334, 37.516092]
+    },
+    {
+      "title": "Bayside",
+      "addr": "1125 Airport Blvd<br> Burlingame, CA 94010",
+      "coord": [-122.3614713, 37.5901596]
+    },
+    {
+      "title": "Foster City Dog Park",
+      "addr": "Foster City Blvd at Bounty<br> Foster City, CA 94401",
+      "coord": [-122.2632888, 37.5589122]
+    },
+    {
+      "title": "Smith Field",
+      "addr": "Wavecrest Rd<br> Half Moon Bay, CA 94019",
+      "coord": [-122.4375324, 37.447913]
+    },
+    {
+      "title": "Shores Dog Park",
+      "addr": "1393 Radio Rd<br> Redwood City, CA 94065",
+      "coord": [-122.230815, 37.5423245]
+    },
+    {
+      "title": "Commodore Park",
+      "addr": "Commodore and Cherry Ave<br> San Bruno, CA 94066",
+      "coord": [-122.4257068, 37.631068]
+    },
+    {
+      "title": "Heather Dog Exercise Area",
+      "addr": "2757 Melendy Drive<br> San Carlos, CA 94070",
+      "coord": [-122.275664, 37.491394]
+    },
+    {
+      "title": "Pulgas Ridge",
+      "addr": "167 Edmonds Rd<br> Redwood City, CA 94062",
+      "coord": [-122.2845595, 37.4756482]
+    }
+  ]
+}
