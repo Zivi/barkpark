@@ -48,6 +48,16 @@ class Map extends React.Component {
               height: 80vh;
               margin-top: 5px;
             }
+            :global(.marker) {
+              background-image: url("http://localhost:3000/static/images/baseline_pets_black_18dp.png");
+              background-size: cover;
+              background-color: #eceff1;
+              width: 20px;
+              height: 20px;
+              border-radius: 50%;
+              border: 1px solid #263238;
+              cursor: pointer;
+            }
           `}
         </style>
       </div>
@@ -58,10 +68,12 @@ class Map extends React.Component {
 const createMarkers = (parks, map) => {
   const markers = [];
   parks.forEach(park => {
+    const el = document.createElement("div");
+    el.className = "marker";
     const popupHTML = `<h3>${park.title}</h3><p>${park.addr}</p>${
       park.notes ? `<p>${park.notes}</p>` : ""
     }`;
-    const marker = new mapboxgl.Marker()
+    const marker = new mapboxgl.Marker(el)
       .setLngLat(park.coord)
       .setPopup(new mapboxgl.Popup({ offset: 40 }).setHTML(popupHTML))
       .addTo(map);

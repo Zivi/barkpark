@@ -20,14 +20,14 @@ export default class extends React.Component {
     const location = query.location || "sf";
     try {
       const response = await fetch(
-        `http://localhost:3000/static/${location}-parks.json`
+        `http://localhost:3000/static/data/${location}-parks.json`
       );
       const jsonResults = await response.json();
       jsonResults.citySelected = query.location;
       return jsonResults;
     } catch (e) {
       const response = await fetch(
-        `http://localhost:3000/static/sf-parks.json`
+        `http://localhost:3000/static/data/sf-parks.json`
       );
       const jsonResults = await response.json();
       jsonResults.citySelected = query.location;
@@ -41,7 +41,7 @@ export default class extends React.Component {
       citySelected: event.target.value
     });
     const response = await fetch(
-      `http://localhost:3000/static/${event.target.value}-parks.json`
+      `http://localhost:3000/static/data/${event.target.value}-parks.json`
     );
     const jsonResults = await response.json();
     this.setState({
@@ -54,7 +54,7 @@ export default class extends React.Component {
     return (
       <div>
         <Head>
-          <title>Bark 🐾 Park</title>
+          <title>Bark Park</title>
           <meta
             name="viewport"
             content="initial-scale=1.0, width=device-width"
@@ -67,9 +67,18 @@ export default class extends React.Component {
             href="https://api.mapbox.com/mapbox-gl-js/v0.44.2/mapbox-gl.css"
             rel="stylesheet"
           />
+          <link
+            rel="stylesheet"
+            href="https://fonts.googleapis.com/icon?family=Material+Icons"
+          />
+          <link
+            rel="icon"
+            type="image/x-icon"
+            href="/static/baseline_pets_black_18dp.png"
+          />
         </Head>
         <h1>
-          Bark 🐾 Park
+          Bark Park
           <span id="index-subtitle">&nbsp; Find a great off leash 🐶 park</span>
         </h1>
         <span className="error-message">
@@ -80,7 +89,7 @@ export default class extends React.Component {
           onChange={this.handleChange.bind(this)}
           value={this.state.citySelected}
         />
-        <Map coord={this.state.coord} zoom="11" parks={this.state.parks} />
+        <Map coord={this.state.coord} zoom="10" parks={this.state.parks} />
         <Footer />
         <style global jsx>{`
           body {
@@ -88,6 +97,7 @@ export default class extends React.Component {
             max-width: 800px;
             width: 95%;
             margin: 0 auto;
+            color: #263238;
           }
           #index-subtitle {
             font-size: 12px;

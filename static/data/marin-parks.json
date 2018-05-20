@@ -1,0 +1,54 @@
+{
+  "coord": [-122.5438364, 37.98],
+  "parks": [
+    {
+      "title": "Red Hill",
+      "addr": "100 Shaw Drive <br> San Anselmo, CA 94960",
+      "coord": [-122.56308774, 37.9817749]
+    },
+    {
+      "title": "Muir Beach",
+      "addr": "100 Pacific Way <br> Muir Beach, CA 94965",
+      "notes": "Lagoon is excluded",
+      "coord": [-122.5779213, 37.8602072]
+    },
+    {
+      "title": "Rodeo Beach and South Rodeo Beach",
+      "addr": "11050 Mitchell Rd <br> Mill Valley, CA 94941",
+      "notes": "Lagoon is excluded",
+      "coord": [-122.5403507, 37.8325035]
+    },
+    {
+      "title": "Fort Baker",
+      "addr": "Center Rd <br> Sausalito, CA 94965",
+      "notes":
+        "Excludes the Chapel Steps Trai, <br> the pier, and Battery Yates",
+      "coord": [-122.4766546, 37.8350392]
+    },
+    {
+      "title": "Piper Park",
+      "addr": "Doherty Drive <br> Larkspur, CA 94939",
+      "coord": [-122.5302722, 37.9387815]
+    },
+    {
+      "title": "Bayfront Park",
+      "addr": "450 Sycamore Ave <br> Mill Valley, CA 94941",
+      "coord": [-122.5341359, 37.8980012]
+    },
+    {
+      "title": "Field of Dogs",
+      "addr": "Civic Center Dr <br> San Rafael, CA 94903",
+      "coord": [-122.529691, 37.9986351]
+    },
+    {
+      "title": "Remington",
+      "addr": "100 Ebbtide Ave <br> Sausalito, CA 94966",
+      "coord": [-122.5064051, 37.8698889]
+    },
+    {
+      "title": "Dogbone Meadow",
+      "addr": "Novato Blvd <br> Novato, CA 94947",
+      "coord": [-122.6202247, 38.1202409]
+    }
+  ]
+}
