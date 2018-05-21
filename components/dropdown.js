@@ -1,3 +1,9 @@
+import getConfig from "next/config";
+
+const {
+  publicRuntimeConfig: { apiHost }
+} = getConfig();
+
 const geos = [
   ["sf", "San Francisco"],
   ["marin", "Marin"],
@@ -39,7 +45,7 @@ class Dropdown extends React.Component {
             -webkit-appearance: none;
             -moz-appearance: none;
             appearance: none;
-            background: url(http://localhost:3000/static/images/baseline_expand_more_black_18dp.png)
+            background: url(${apiHost}/static/images/baseline_expand_more_black_18dp.png)
               96% / 15% no-repeat #eceff1;
           }
           .geo-option {

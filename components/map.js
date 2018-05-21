@@ -1,3 +1,9 @@
+import getConfig from "next/config";
+
+const {
+  publicRuntimeConfig: { apiHost }
+} = getConfig();
+
 class Map extends React.Component {
   constructor(props) {
     super(props);
@@ -49,7 +55,7 @@ class Map extends React.Component {
               margin-top: 5px;
             }
             :global(.marker) {
-              background-image: url("http://localhost:3000/static/images/baseline_pets_black_18dp.png");
+              background-image: url("${apiHost}/static/images/baseline_pets_black_18dp.png");
               background-size: cover;
               background-color: #eceff1;
               width: 20px;
