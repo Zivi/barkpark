@@ -1,3 +1,11 @@
+const geos = [
+  ["sf", "San Francisco"],
+  ["marin", "Marin"],
+  ["alameda", "Alameda"],
+  ["sanmateo", "San Mateo"],
+  ["santaclara", "Santa Clara"]
+];
+
 class Dropdown extends React.Component {
   constructor(props) {
     super(props);
@@ -11,25 +19,16 @@ class Dropdown extends React.Component {
           onChange={this.props.onChange}
           className="geo-select"
         >
-          <option className="geo-option" value="sf">
-            San Francisco
-          </option>
-          <option className="geo-option" value="marin">
-            Marin
-          </option>
-          <option className="geo-option" value="alameda">
-            Alameda
-          </option>
-          <option className="geo-option" value="sanmateo">
-            San Mateo
-          </option>
-          <option className="geo-option" value="santaclara">
-            Santa Clara
-          </option>
+          {geos.map(geo => (
+            <option className="geo-option" value={geo[0]} key={geo[0]}>
+              {geo[1]}
+            </option>
+          ))}
         </select>
+
         <style jsx>{`
           .geo-dropdown {
-            display: inline;
+            display: inline-block;
           }
           .geo-select {
             font-size: 16px;

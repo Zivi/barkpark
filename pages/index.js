@@ -1,14 +1,21 @@
 import Head from "next/head";
 import React from "react";
 import "isomorphic-unfetch";
+import getConfig from "next/config";
+import Router from "next/router";
 import Dropdown from "../components/dropdown";
 import Map from "../components/map";
 import Footer from "../components/footer";
+
+const {
+  publicRuntimeConfig: { apiHost }
+} = getConfig();
+
 export default class extends React.Component {
   constructor(props) {
     super(props);
     this.state = {
-      citySelected: props.citySelected,
+      countySelected: props.countySelected,
       coord: props.coord,
       parks: props.parks,
       zoom: props.zoom
@@ -21,28 +28,30 @@ export default class extends React.Component {
     const location = query.location || "sf";
     try {
       const response = await fetch(
-        `http://localhost:3000/static/data/${location}-parks.json`
+        `${apiHost}/static/data/${location}-parks.json`
       );
       const jsonResults = await response.json();
-      jsonResults.citySelected = query.location;
-      return jsonResults;
+      return {
+        ...jsonResults,
+        countySelected: location
+      };
     } catch (e) {
-      const response = await fetch(
-        `http://localhost:3000/static/data/sf-parks.json`
-      );
+      const response = await fetch(`${apiHost}/static/data/sf-parks.json`);
       const jsonResults = await response.json();
-      jsonResults.citySelected = query.location;
-      jsonResults.jsonNotFound = true;
-      return jsonResults;
+      return {
+        ...jsonResults,
+        countySelected: location,
+        jsonNotFound: true
+      };
     }
   }
 
   async handleChange(event) {
     this.setState({
-      citySelected: event.target.value
+      countySelected: event.target.value
     });
     const response = await fetch(
-      `http://localhost:3000/static/data/${event.target.value}-parks.json`
+      `${apiHost}/static/data/${event.target.value}-parks.json`
     );
     const jsonResults = await response.json();
     this.setState({
@@ -50,6 +59,9 @@ export default class extends React.Component {
       parks: jsonResults.parks,
       zoom: jsonResults.zoom
     });
+
+    const href = `/?location=${this.state.countySelected}`;
+    Router.replace(href, href, { shallow: true });
   }
 
   render() {
@@ -76,7 +88,7 @@ export default class extends React.Component {
           <link
             rel="icon"
             type="image/x-icon"
-            href="/static/baseline_pets_black_18dp.png"
+            href="/static/images/baseline_pets_black_18dp.png"
           />
         </Head>
         <h1>
@@ -89,7 +101,7 @@ export default class extends React.Component {
         </span>
         <Dropdown
           onChange={this.handleChange.bind(this)}
-          value={this.state.citySelected}
+          value={this.state.countySelected}
         />
         <Map
           coord={this.state.coord}

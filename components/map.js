@@ -13,7 +13,7 @@ class Map extends React.Component {
     });
     return {
       markers: createMarkers(nextProps.parks, prevState.map),
-      center: centerMap(nextProps.coord, prevState.map)
+      center: centerMap(nextProps.coord, nextProps.zoom, prevState.map)
     };
   }
 
@@ -82,8 +82,8 @@ const createMarkers = (parks, map) => {
   return markers;
 };
 
-const centerMap = (coords, map) => {
-  map.flyTo({ center: coords });
+const centerMap = (coords, zoom, map) => {
+  map.flyTo({ center: coords, zoom: zoom });
 };
 
 export default Map;
