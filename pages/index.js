@@ -74,7 +74,7 @@ export default class extends React.Component {
             content="initial-scale=1.0, width=device-width"
           />
           <script
-            crossOrigin
+            crossOrigin="true"
             src="https://api.mapbox.com/mapbox-gl-js/v0.44.2/mapbox-gl.js"
           />
           <link

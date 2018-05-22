@@ -34,6 +34,9 @@ class Map extends React.Component {
       zoom: this.props.zoom
     });
 
+    const nav = new mapboxgl.NavigationControl();
+    this.map.addControl(nav, "top-left");
+
     this.setState({
       map: this.map,
       markers: createMarkers(this.props.parks, this.map)
