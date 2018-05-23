@@ -58,11 +58,14 @@ class Map extends React.Component {
               margin-top: 5px;
             }
             :global(.marker) {
+              padding: 10px;
+            }
+            :global(.marker-img) {
               background-image: url("${apiHost}/static/images/baseline_pets_black_18dp.png");
               background-size: cover;
               background-color: #eceff1;
-              width: 20px;
-              height: 20px;
+              width: 22px;
+              height: 22px;
               border-radius: 50%;
               border: 1px solid #263238;
               cursor: pointer;
@@ -78,7 +81,10 @@ const createMarkers = (parks, map) => {
   const markers = [];
   parks.forEach(park => {
     const el = document.createElement("div");
+    const innerEl = document.createElement("div");
+    el.appendChild(innerEl);
     el.className = "marker";
+    innerEl.className = "marker-img";
     const popupHTML = `<h3>${park.title}</h3><p>${park.addr}</p>${
       park.notes ? `<p>${park.notes}</p>` : ""
     }`;
