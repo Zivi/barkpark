@@ -18,7 +18,8 @@ export default class extends React.Component {
       countySelected: props.countySelected,
       coord: props.coord,
       parks: props.parks,
-      zoom: props.zoom
+      zoom: props.zoom,
+      jsonNotFound: props.jsonNotFound
     };
   }
 
@@ -46,18 +47,15 @@ export default class extends React.Component {
     }
   }
 
-  async handleChange(event) {
-    this.setState({
-      countySelected: event.target.value
-    });
-    const response = await fetch(
-      `${apiHost}/static/data/${event.target.value}-parks.json`
-    );
+  async handleChange({ target: { value } }) {
+    const response = await fetch(`${apiHost}/static/data/${value}-parks.json`);
     const jsonResults = await response.json();
     this.setState({
       coord: jsonResults.coord,
       parks: jsonResults.parks,
-      zoom: jsonResults.zoom
+      zoom: jsonResults.zoom,
+      countySelected: value,
+      jsonNotFound: false
     });
 
     const href = `/?location=${this.state.countySelected}`;
@@ -96,7 +94,7 @@ export default class extends React.Component {
           <span id="index-subtitle">&nbsp; Find a great off leash 🐶 park</span>
         </h1>
         <span className="error-message">
-          {this.props.jsonNotFound &&
+          {this.state.jsonNotFound &&
             "We couldn't find parks with your location, select a location from the dropdown ➡ "}
         </span>
         <Dropdown
