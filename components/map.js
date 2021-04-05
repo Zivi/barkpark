@@ -85,9 +85,11 @@ const createMarkers = (parks, map) => {
     el.appendChild(innerEl);
     el.className = "marker";
     innerEl.className = "marker-img";
-    const popupHTML = `<h3>${park.title}</h3><p>${park.addr}</p>${
-      park.notes ? `<p>${park.notes}</p>` : ""
-    }`;
+    const popupHTML = 
+      `<h3>${park.title}</h3>
+       <p>${park.addr}</p>
+       ${park.notes ? `<p>${park.notes}</p>` : ""}
+       ${park.url ? `<a href=${park.url} target=#>More Information</p>`: ""}`;
     const marker = new mapboxgl.Marker(el)
       .setLngLat(park.coord)
       .setPopup(new mapboxgl.Popup({ offset: 40 }).setHTML(popupHTML))

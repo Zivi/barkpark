@@ -5,17 +5,20 @@
     {
       "title": "Fort Funston",
       "addr": "Fort Funston Rd San <br> Francisco, CA 94132",
-      "coord": [-122.5028, 37.7195]
+      "coord": [-122.5028, 37.7195],
+      "url": "https://goo.gl/maps/tBFCXfZobJdxVWKeA"
     },
     {
       "title": "McClaren Park",
       "addr": "Geneva & Brookdale <br> San Francisco, CA 94134",
-      "coord": [-122.4261002, 37.7116582]
+      "coord": [-122.4261002, 37.7116582],
+      "url": "https://goo.gl/maps/KBj7MyHufDwxA6fS9"
     },
     {
       "title": "Alamo Square",
       "addr": "Hayes & Steiner <br> San Francisco, CA 94117",
-      "coord": [-122.4354552, 37.7762501]
+      "coord": [-122.4354552, 37.7762501],
+      "url": "https://goo.gl/maps/XvK31Xk9TaErTXsBA"
     },
     {
       "title": "Alta Plaza",
