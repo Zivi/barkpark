@@ -6,152 +6,140 @@
       "title": "Fort Funston",
       "addr": "Fort Funston Rd San <br> Francisco, CA 94132",
       "coord": [-122.5028, 37.7195],
-      "url": "https://goo.gl/maps/tBFCXfZobJdxVWKeA"
+      "url": "https://goo.gl/maps/r3VmMWUJpYCJH2bs8"
     },
     {
       "title": "McClaren Park",
       "addr": "Geneva & Brookdale <br> San Francisco, CA 94134",
       "coord": [-122.4261002, 37.7116582],
-      "url": "https://goo.gl/maps/KBj7MyHufDwxA6fS9"
+      "url": "https://goo.gl/maps/1zJ7hQdTUCi4mvon9"
     },
     {
       "title": "Alamo Square",
       "addr": "Hayes & Steiner <br> San Francisco, CA 94117",
       "coord": [-122.4354552, 37.7762501],
-      "url": "https://goo.gl/maps/XvK31Xk9TaErTXsBA"
+      "url": "https://goo.gl/maps/QjwdLsz7WrTwCNfQ7"
     },
     {
       "title": "Alta Plaza",
       "addr": "Jackson & Steiner <br> San Francisco, CA 94115",
-      "coord": [-122.4375905, 37.7907023]
+      "coord": [-122.4375905, 37.7907023],
+      "url": "https://goo.gl/maps/mWeQ5o9vX8JNEtpi9"
     },
     {
       "title": "Bernal Heights",
       "addr": "Bernal Heights Blvd <br> San Francisco, CA 94110",
-      "coord": [-122.4139578, 37.7430381]
+      "coord": [-122.4139578, 37.7430381],
+      "url": "https://goo.gl/maps/TD8BRHnHWMk1NLfC7"
     },
     {
       "title": "Buena Vista",
       "addr": "Buena Vista & Haight St <br> San Francisco, CA 94117",
-      "coord": [-122.4425251, 37.76907]
+      "coord": [-122.4425251, 37.76907],
+      "url": "https://goo.gl/maps/Ta4yaWiRKNjVvV2y9"
     },
     {
       "title": "Corona Heights",
       "addr": "Roosevelt & Museum Way <br> San Francisco, CA 94114",
-      "coord": [-122.4397436, 37.765547]
+      "coord": [-122.4397436, 37.765547],
+      "url": "https://goo.gl/maps/KfvAKvM8Y1iVBXYw6"
     },
     {
       "title": "Crocker Amazon",
       "addr": "Moscow & Geneva <br> San Francisco, CA 94112",
-      "coord": [-122.4277578, 37.7150164]
+      "coord": [-122.4277578, 37.7150164],
+      "url": "https://goo.gl/maps/ppbtz5piyENmJ9ts6"
     },
     {
       "title": "Upper Douglas",
       "addr": "26th & Douglas St <br> San Francisco, CA 94114",
       "notes": "Closed Wednesdays",
-      "coord": [-122.4389421, 37.7466982]
+      "coord": [-122.4389421, 37.7466982],
+      "url": "https://goo.gl/maps/sx2vMsfRvV1KUQnp8"
     },
     {
       "title": "Duboce Park",
       "addr": "Duboce & Scott St <br> San Francisco, CA 94117",
-      "coord": [-122.432691, 37.769546]
+      "coord": [-122.432691, 37.769546],
+      "url": "https://goo.gl/maps/7pGeZ9ygPtK9jWKh8"
     },
     {
       "title": "Eureka Valley",
       "addr": "100 Collingwood St <br> San Francisco, CA 94114",
-      "coord": [-122.4363509, 37.7597595]
-    },
-    {
-      "title": "Golden Gate Park Dog Play Area 1",
-      "addr":
-        "Martin Luther King Jr Dr & Bowling Green Dr <br> San Francisco, CA 94117",
-      "coord": [-122.4617463, 37.7666044]
-    },
-    {
-      "title": "Golden Gate Park Dog Play Area 2",
-      "addr": "Fulton St & Stanyan St <br> San Francisco, CA 94117",
-      "coord": [-122.454988, 37.7744918]
-    },
-    {
-      "title": "Golden Gate Park Dog Play Area 3",
-      "addr":
-        "Martin Luther King Jr Dr & Sunset Blvd <br> San Francisco, CA 94122",
-      "coord": [-122.4953686, 37.765939]
+      "coord": [-122.4363509, 37.7597595],
+      "url": "https://goo.gl/maps/BKFZ5yGUjwRwMN3j9"
     },
     {
       "title": "Golden Gate Park Dog Training Area",
       "addr": "Off 36th Ave in Golden Gate Park <br> San Francisco, CA 94121",
-      "coord": [-122.4994299, 37.7709859]
+      "coord": [-122.4994299, 37.7709859],
+      "url": "https://goo.gl/maps/EM73BxPgZy5VvNeC9"
     },
     {
       "title": "Head & Brotherhood",
       "addr": "Head St & Brotherhood Way <br> San Francisco, CA 94112",
-      "coord": [-122.4642209, 37.7126273]
+      "coord": [-122.4642209, 37.7126273],
+      "url": "https://goo.gl/maps/RsEqiAthh8XgGHF86"
     },
     {
       "title": "Jefferson Square",
       "addr": "Eddy & Gough <br> San Francisco, CA 94102",
-      "coord": [-122.4263642, 37.7816418]
+      "coord": [-122.4263642, 37.7816418],
+      "url": "https://goo.gl/maps/VKan4LhorHEa5jqx8"
     },
     {
       "title": "Lafayette Park",
       "addr": "Washington & Laguna St <br> San Francisco, CA 94115",
-      "coord": [-122.4267625, 37.7910582]
+      "coord": [-122.4267625, 37.7910582],
+      "url": "https://goo.gl/maps/pLqMXZrtRDBLZijv7"
     },
     {
       "title": "Lake Merced Park",
       "addr": "Lake Merced Blvd & Middlefield Dr <br> San Francisco, CA 94132",
-      "coord": [-122.4879343, 37.7290778]
+      "coord": [-122.4879343, 37.7290778],
+      "url": "https://goo.gl/maps/BBMZc2EGgN99Rg2T8"
     },
     {
       "title": "McKinley Square",
       "addr": "20th St & Vermont <br> San Francisco, CA 94107",
-      "coord": [-122.4048293, 37.7590295]
-    },
-    {
-      "title": "McLaren Amphitheatre",
-      "addr": "John F Shelley Dr & Cambridge St <br> San Francisco, CA 94134",
-      "coord": [-122.4184461, 37.7204162]
+      "coord": [-122.4048293, 37.7590295],
+      "url": "https://goo.gl/maps/cqAe621QdV7HnjGk9"
     },
     {
       "title": "Mission Dolores Park",
       "addr": "19th & Dolores St <br> San Francisco, CA 94114",
-      "coord": [-122.427553, 37.759328]
+      "coord": [-122.427553, 37.759328],
+      "url": "https://goo.gl/maps/EAU62UYTxc8Z8E1NA"
     },
     {
       "title": "Mountain Lake Park",
       "addr": "1 Funston Ave <br> San Francisco, CA 94118",
-      "coord": [-122.4667286, 37.7873845]
-    },
-    {
-      "title": "Pine Lake Park",
-      "addr": "Sloat Blvd & Vale St <br> San Francisco, CA 94116",
-      "coord": [-122.4845949, 37.7362348]
-    },
-    {
-      "title": "Potrero Hill Rec Center",
-      "addr": "801 Arkansas St <br> San Francisco, CA 94107",
-      "coord": [-122.3972197, 37.7571802]
+      "coord": [-122.4667286, 37.7873845],
+      "url": "https://goo.gl/maps/RZ5ivrBECfCoywEJ6"
     },
     {
       "title": "St Mary's",
       "addr": "Murray & Justin Dr <br> San Francisco, CA 94112",
-      "coord": [-122.4208021, 37.7328026]
+      "coord": [-122.4208021, 37.7328026],
+      "uel": "https://goo.gl/maps/np3VwQHa4ugoP8ub8"
     },
     {
       "title": "Stern Grove",
       "addr": "19th Ave & Sloat Blvd <br> San Francisco, CA 94116",
-      "coord": [-122.4785155, 37.7369668]
+      "coord": [-122.4785155, 37.7369668],
+      "url": "https://goo.gl/maps/wdfYfEEhar83D5DX8"
     },
     {
-      "title": "Upper Noe",
+      "title": "Joby's Dog Run Area",
       "addr": "Day & Sanchez St <br> San Francisco, CA 94131",
-      "coord": [-122.4271756, 37.7425982]
+      "coord": [-122.4271756, 37.7425982],
+      "url": "https://goo.gl/maps/AvmcQGZZG2BYRKfq7"
     },
     {
       "title": "Walter Haas",
       "addr": "Addison & Farnum <br> San Francisco, CA 94131",
-      "coord": [-122.4353688, 37.7404288]
+      "coord": [-122.4353688, 37.7404288],
+      "url": "https://goo.gl/maps/thg2BSXn2sraSXzS8"
     }
   ]
 }
